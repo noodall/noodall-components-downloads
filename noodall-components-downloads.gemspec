@@ -7,11 +7,11 @@ require "noodall-components-downloads/version"
 Gem::Specification.new do |s|
   s.name        = "noodall-components-downloads"
   s.version     = NoodallComponentsDownloads::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of NoodallComponentsDownloads."
-  s.description = "TODO: Description of NoodallComponentsDownloads."
+  s.authors     = ["Steve England", "Jordan Elver"]
+  s.email       = []
+  s.homepage    = "https://github.com/noodall/noodall-components-downloads"
+  s.summary     = "A download list component for Noodall"
+  s.description = "A download list component for Noodall"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
