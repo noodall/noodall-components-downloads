@@ -3,9 +3,6 @@ Feature: Downloads Component
   As a website editor
   I want to to create a list of documents within a template
 
-  Background:
-    Given I am signed in as a website editor
-
   @javascript
   Scenario: Add some downloads
     Given I am editing content
