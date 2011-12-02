@@ -1,0 +1,6 @@
+development:
+  database: noodall-components-downloads_development
+test:
+  database: noodall-components-downloads_test
+production:
+  database: noodall-components-downloads_production
