@@ -5,8 +5,8 @@ end
 
 Given /^place a "([^"]*)" component in a slot$/ do |component_name|
   slot_name = case component_name
-  when 'Carousel'
-    'Carousel Slot'
+  when 'Downloads'
+    'Download Slot'
   else
     'Large Slot'
   end

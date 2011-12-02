@@ -1,0 +1,14 @@
+<div id="<%= slot_code %>" class="component downloads <%= component.style %> <%= expand ? 'double' : 'single' %> <%= additional_classes %>">
+  <h3><%=h component.title %></h3>
+  <%= simple_format component.description %>
+  <ul>
+    <% for asset in component.assets %>
+      <li>
+        <a href="<%= asset.url %>" title="<%= asset.title %>" target="_blank">
+          <span><%= asset.title %></span>
+          <span class="size"><%= number_to_human_size(asset.file_size) %></span>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
