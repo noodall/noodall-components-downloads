@@ -14,10 +14,10 @@ end
 Factory.define :zip_asset, :parent => :asset do |asset|
   asset.title { "A zip file asset" }
   asset.description { "The zip file asset description" }
-  asset.file {File.new(File.expand_path("../../files/test.zip",  __FILE__))}
+  asset.file { File.new(File.expand_path("factories/files/test.zip")) }
 end
 
 Factory.define :document_asset, :parent => :asset do |asset|
   asset.title { "Document asset" }
-  asset.file { File.new("#{Rails.root}/spec/files/test.pdf") }
+  asset.file { File.new(File.expand_path("factories/files/test.pdf")) }
 end
