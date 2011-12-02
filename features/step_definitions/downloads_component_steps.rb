@@ -28,8 +28,8 @@ Given /^attach files a want to make available to download$/ do
 end
 
 Then /^I should see a list of the files in the slot$/ do
-  page.should have_css(".downloads li a", :count => 3)
-  page.should have_css(".downloads li a[href$='.txt']", :count => 1)
-  page.should have_css(".downloads li a[href$='.zip']", :count => 2)
+  assert page.has_css?(".downloads li a", :count => 3)
+  assert page.has_css?(".downloads li a[href$='.txt']", :count => 1)
+  assert page.has_css?(".downloads li a[href$='.zip']", :count => 2)
 end
 
